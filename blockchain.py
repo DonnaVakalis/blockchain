@@ -250,6 +250,7 @@ def full_chain():
     response = {
         'chain': blockchain.chain,
         'length': len(blockchain.chain),
+        'this is a valid chain': blockchain.valid_chain(blockchain.chain)
     }
     return jsonify(response), 200
 
